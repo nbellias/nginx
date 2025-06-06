@@ -2,6 +2,9 @@
 
 ## Commands
 docker build . -t nbellias/nginx
+
+docker run -d -p 12345:80 -v D:\DATA\Volumes\nginx:/usr/share/nginx/html --name nginx nbellias/nginx
+
 docker login 
 docker buildx create --name buildx-multi-arch          
 docker buildx use buildx-multi-arch      
